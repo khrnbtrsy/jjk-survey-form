@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Jujutsu High Sorcerers Intake Survey</h1>
+  <p id="description">Welcome, future jujutsu sorcerer. Fill out the form below to begin your training at Tokyo Jujutsu High.</p>
+
+
+  <form id="survey-form">
+    <!-- text -->
+    <fieldset>
+    <!-- name -->
+    <label id="name-label" for="name"> Sorcerer Name:
+      <input id="name" type="text" placeholder="Ex: Yuuji Itadori" required/>
+    </label>
+
+    <!-- email -->
+    <label id="email-label" for="email"> Sorcerer Email:
+      <input id="email" type="email" placeholder="Ex: yourcursedemail@jujutsuhigh.com" required/>
+    </label>
+
+    <!-- number -->
+    <label id="number-label" for="number"> Sorcerer Age:
+      <input id="number" type="number" min="1" max="120" placeholder="Ex: 15"required/>
+    </label>    
+    </fieldset>
+
+    <!-- dropdown -->
+    <fieldset>
+        <p>Who would you like to be assigned as your mentor?</p>
+
+        <select id="dropdown">
+            <option value="">Choose your mentor</option> <!-- This is selectable -->
+            <option value="yaga">Masamichi Yaga</option>
+            <option value="gojo">Gojo Satoru</option>
+            <option value="nanami">Kento Nanami</option>
+            <option value="shoko">Shoko Ieiri</option>
+        </select>
+    </fieldset>
+
+    <!-- radiobutton -->
+     <fieldset>
+        <legend>What is your grade?</legend>
+        <label class="radio-group-option"> 
+            <input id="grade-four" name="grade" value="grade-four" type="radio"/> 4
+        </label>
+        <label class="radio-group-option">
+            <input id="grade-three" name="grade" value="grade-three" type="radio"/> 3
+        </label>
+        <label class="radio-group-option">
+            <input id="grade-semi-grade-two" name="grade" value="grade-semi-grade-two" type="radio"/> Semi-grade 2
+        </label>
+        <label class="radio-group-option">
+            <input id="grade=two" name="grade" value="grade=two" type="radio"/> Grade 2
+        </label>
+        <label class="radio-group-option">
+            <input id="grade-semi-grade-one" name="grade" value="grade-semi-grade-one" type="radio"/> Semi-grade 1
+        </label>
+        <label class="radio-group-option">
+            <input id="grade-one" name="grade" value="grade-one" type="radio"/> Grade 1
+        </label>
+        <label class="radio-group-option">
+            <input id="grade-special-grade-one" name="grade" value="grade-special-grade-one" type="radio"/> Special Grade 1
+        </label>
+        <label class="radio-group-option">
+            <input id="grade-special-grade" name="grade" value="grade-special-grade" type="radio"/> Special Grade 
+        </label>
+     </fieldset>
+
+     <fieldset>
+        <p>What is your specialty?</p>
+        <label class="checkbox-option">
+            <input type="checkbox" name="technique" value="limitless"/> Limitless
+        </label>
+        <label class="checkbox-option">
+            <input type="checkbox" name="technique" value="ten-shadows-technique"/> Ten Shadows Technique
+        </label>
+        <label class="checkbox-option">
+            <input type="checkbox" name="technique" value="blood-manipulation"/> Blood Manipulation
+        </label>
+        <label class="checkbox-option">
+            <input type="checkbox" name="technique" value="cursed-speech"/> Cursed Speech
+        </label>
+        <label class="checkbox-option">
+            <input type="checkbox" name="technique" value="projection-sorcery"/> Projection Sorcery
+        </label>
+        <label class="checkbox-option">
+            <input type="checkbox" name="technique" value="other-technique"/> Other Technique
+        </label>
+     </fieldset>
+
+     <fieldset>
+        <label for="comments">Any cursed comments or mission notes?</label>
+      <textarea id="comments" name="comments" placeholder="Ex: I can use curse weapons."></textarea>
+     </fieldset>
+
+     <button type="submit" id="submit">Submit to HQ</button>
+  </form>
+
+</body>
+</html>
